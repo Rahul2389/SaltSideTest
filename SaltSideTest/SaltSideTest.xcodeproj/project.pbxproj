@@ -24,6 +24,10 @@
 		924FFF771CC7DABF00B0ADE9 /* ListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF741CC7DABF00B0ADE9 /* ListParser.m */; settings = {ASSET_TAGS = (); }; };
 		924FFF781CC7DABF00B0ADE9 /* UIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF761CC7DABF00B0ADE9 /* UIUtility.m */; settings = {ASSET_TAGS = (); }; };
 		924FFF7B1CC7DB3800B0ADE9 /* NSString+Manipulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF7A1CC7DB3800B0ADE9 /* NSString+Manipulate.m */; settings = {ASSET_TAGS = (); }; };
+		924FFF7E1CC7DCA700B0ADE9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF7D1CC7DCA700B0ADE9 /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		924FFF811CC7DE6500B0ADE9 /* UILabel+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF801CC7DE6500B0ADE9 /* UILabel+Extras.m */; settings = {ASSET_TAGS = (); }; };
+		924FFF841CC7DE8500B0ADE9 /* UIImage+Manipulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF831CC7DE8500B0ADE9 /* UIImage+Manipulate.m */; settings = {ASSET_TAGS = (); }; };
+		924FFF861CC7DF3500B0ADE9 /* PlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 924FFF851CC7DF3500B0ADE9 /* PlaceHolder.png */; settings = {ASSET_TAGS = (); }; };
 		FE06147E65252401EF598B35 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAEAD199E7018CC9C03CD96 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +85,13 @@
 		924FFF761CC7DABF00B0ADE9 /* UIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtility.m; sourceTree = "<group>"; };
 		924FFF791CC7DB3800B0ADE9 /* NSString+Manipulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Manipulate.h"; sourceTree = "<group>"; };
 		924FFF7A1CC7DB3800B0ADE9 /* NSString+Manipulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Manipulate.m"; sourceTree = "<group>"; };
+		924FFF7C1CC7DCA700B0ADE9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		924FFF7D1CC7DCA700B0ADE9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		924FFF7F1CC7DE6500B0ADE9 /* UILabel+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extras.h"; sourceTree = "<group>"; };
+		924FFF801CC7DE6500B0ADE9 /* UILabel+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extras.m"; sourceTree = "<group>"; };
+		924FFF821CC7DE8500B0ADE9 /* UIImage+Manipulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Manipulate.h"; sourceTree = "<group>"; };
+		924FFF831CC7DE8500B0ADE9 /* UIImage+Manipulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Manipulate.m"; sourceTree = "<group>"; };
+		924FFF851CC7DF3500B0ADE9 /* PlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaceHolder.png; sourceTree = "<group>"; };
 		B06251A20689A466CC68C4F5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CEAEAD199E7018CC9C03CD96 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -163,6 +174,7 @@
 				924FFF391CC789C700B0ADE9 /* NetworkingExtensions */,
 				924FFF3A1CC789C700B0ADE9 /* Utils */,
 				924FFF031CC764D500B0ADE9 /* Assets.xcassets */,
+				924FFF851CC7DF3500B0ADE9 /* PlaceHolder.png */,
 				924FFF051CC764D500B0ADE9 /* LaunchScreen.storyboard */,
 				924FFF081CC764D500B0ADE9 /* Info.plist */,
 				924FFEF71CC764D500B0ADE9 /* Supporting Files */,
@@ -224,6 +236,8 @@
 			children = (
 				924FFF611CC7DA9400B0ADE9 /* ListViewController.h */,
 				924FFF621CC7DA9400B0ADE9 /* ListViewController.m */,
+				924FFF7C1CC7DCA700B0ADE9 /* DetailViewController.h */,
+				924FFF7D1CC7DCA700B0ADE9 /* DetailViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -235,6 +249,10 @@
 				924FFF661CC7DAA900B0ADE9 /* NSArray+JSON.m */,
 				924FFF791CC7DB3800B0ADE9 /* NSString+Manipulate.h */,
 				924FFF7A1CC7DB3800B0ADE9 /* NSString+Manipulate.m */,
+				924FFF7F1CC7DE6500B0ADE9 /* UILabel+Extras.h */,
+				924FFF801CC7DE6500B0ADE9 /* UILabel+Extras.m */,
+				924FFF821CC7DE8500B0ADE9 /* UIImage+Manipulate.h */,
+				924FFF831CC7DE8500B0ADE9 /* UIImage+Manipulate.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -366,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				924FFF071CC764D500B0ADE9 /* LaunchScreen.storyboard in Resources */,
+				924FFF861CC7DF3500B0ADE9 /* PlaceHolder.png in Resources */,
 				924FFF041CC764D500B0ADE9 /* Assets.xcassets in Resources */,
 				924FFF021CC764D500B0ADE9 /* Main.storyboard in Resources */,
 			);
@@ -443,12 +462,15 @@
 				924FFF711CC7DAA900B0ADE9 /* NSDictionary+SSJsonData.m in Sources */,
 				924FFF701CC7DAA900B0ADE9 /* ItemData.m in Sources */,
 				924FFF631CC7DA9400B0ADE9 /* ListViewController.m in Sources */,
+				924FFF811CC7DE6500B0ADE9 /* UILabel+Extras.m in Sources */,
 				924FFF3D1CC789D600B0ADE9 /* SSURLSessionManager.m in Sources */,
 				924FFF771CC7DABF00B0ADE9 /* ListParser.m in Sources */,
 				924FFF721CC7DAA900B0ADE9 /* ListViewCell.m in Sources */,
 				924FFF401CC78C0700B0ADE9 /* AFNetworkReachabilityManager+Extras.m in Sources */,
 				924FFEFC1CC764D500B0ADE9 /* AppDelegate.m in Sources */,
+				924FFF841CC7DE8500B0ADE9 /* UIImage+Manipulate.m in Sources */,
 				924FFF6F1CC7DAA900B0ADE9 /* NSArray+JSON.m in Sources */,
+				924FFF7E1CC7DCA700B0ADE9 /* DetailViewController.m in Sources */,
 				924FFEF91CC764D500B0ADE9 /* main.m in Sources */,
 				924FFF781CC7DABF00B0ADE9 /* UIUtility.m in Sources */,
 				924FFF7B1CC7DB3800B0ADE9 /* NSString+Manipulate.m in Sources */,

@@ -8,6 +8,8 @@
 
 #import "ListViewController.h"
 
+#import "DetailViewController.h"
+
 // Network Imports
 #import "AFNetworkReachabilityManager+Extras.h"
 #import "SSURLSessionManager.h"
@@ -49,6 +51,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([segue.identifier isEqualToString:kSSItemToDetailSequeIdentifier]) {
+        
+        UITableViewCell* tableViewCell = (UITableViewCell *)sender;
+        NSIndexPath* indexPath = [self.tableView indexPathForCell:tableViewCell];
+        
+        DetailViewController *detailViewController = [segue destinationViewController];
+        detailViewController.itemData = [self.itemListArray objectAtIndex:indexPath.row];
+    }
 }
 
 #pragma mark - Button Actions
