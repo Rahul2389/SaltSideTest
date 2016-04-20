@@ -28,6 +28,7 @@
 		924FFF811CC7DE6500B0ADE9 /* UILabel+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF801CC7DE6500B0ADE9 /* UILabel+Extras.m */; settings = {ASSET_TAGS = (); }; };
 		924FFF841CC7DE8500B0ADE9 /* UIImage+Manipulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF831CC7DE8500B0ADE9 /* UIImage+Manipulate.m */; settings = {ASSET_TAGS = (); }; };
 		924FFF861CC7DF3500B0ADE9 /* PlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 924FFF851CC7DF3500B0ADE9 /* PlaceHolder.png */; settings = {ASSET_TAGS = (); }; };
+		924FFF8A1CC7E6B900B0ADE9 /* NSCache+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF891CC7E6B900B0ADE9 /* NSCache+Images.m */; settings = {ASSET_TAGS = (); }; };
 		FE06147E65252401EF598B35 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAEAD199E7018CC9C03CD96 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,8 @@
 		924FFF821CC7DE8500B0ADE9 /* UIImage+Manipulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Manipulate.h"; sourceTree = "<group>"; };
 		924FFF831CC7DE8500B0ADE9 /* UIImage+Manipulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Manipulate.m"; sourceTree = "<group>"; };
 		924FFF851CC7DF3500B0ADE9 /* PlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaceHolder.png; sourceTree = "<group>"; };
+		924FFF881CC7E6B900B0ADE9 /* NSCache+Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCache+Images.h"; sourceTree = "<group>"; };
+		924FFF891CC7E6B900B0ADE9 /* NSCache+Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCache+Images.m"; sourceTree = "<group>"; };
 		B06251A20689A466CC68C4F5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CEAEAD199E7018CC9C03CD96 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,6 +173,7 @@
 				924FFF421CC78DCC00B0ADE9 /* ViewController */,
 				924FFF671CC7DAA900B0ADE9 /* Models */,
 				924FFF6C1CC7DAA900B0ADE9 /* Views */,
+				924FFF871CC7E68700B0ADE9 /* ImageCache */,
 				924FFF641CC7DAA900B0ADE9 /* Categories */,
 				924FFF391CC789C700B0ADE9 /* NetworkingExtensions */,
 				924FFF3A1CC789C700B0ADE9 /* Utils */,
@@ -275,6 +279,15 @@
 				924FFF6E1CC7DAA900B0ADE9 /* ListViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		924FFF871CC7E68700B0ADE9 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				924FFF881CC7E6B900B0ADE9 /* NSCache+Images.h */,
+				924FFF891CC7E6B900B0ADE9 /* NSCache+Images.m */,
+			);
+			path = ImageCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				924FFF711CC7DAA900B0ADE9 /* NSDictionary+SSJsonData.m in Sources */,
+				924FFF8A1CC7E6B900B0ADE9 /* NSCache+Images.m in Sources */,
 				924FFF701CC7DAA900B0ADE9 /* ItemData.m in Sources */,
 				924FFF631CC7DA9400B0ADE9 /* ListViewController.m in Sources */,
 				924FFF811CC7DE6500B0ADE9 /* UILabel+Extras.m in Sources */,

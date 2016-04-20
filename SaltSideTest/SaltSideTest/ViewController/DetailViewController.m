@@ -12,6 +12,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "UILabel+Extras.h"
 #import "UIImage+Manipulate.h"
+#import "NSCache+Images.h"
 
 @implementation DetailViewController
 
@@ -38,47 +39,62 @@
 
 - (void)downloadImage{
     
-    [UIUtility setNetworkActivityIndicator:YES];
-    [UIUtility addActivityIndicatorViewOnView:self.imageView
-                                       ofSize:CGSizeZero];
+    // Retreiving in Cache
+    UIImage* image =
+    [[NSCache sharedInstance] getImageForKey:self.itemData.imageUrl];
     
-    NSURL *URL = [NSURL URLWithString:self.itemData.imageUrl];
-    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
-    
-    DetailViewController * __weak weakSelf = self;
-    UIImage* placeHolderImage = [UIImage imageNamed:@"PlaceHolder"];
-    
-    [self.imageView setImageWithURLRequest:request
-                          placeholderImage:placeHolderImage
-                                   success:^(NSURLRequest *request,
-                                             NSHTTPURLResponse * _Nullable response,
-                                             UIImage *image)
-     {
-         
-         [UIUtility setNetworkActivityIndicator:NO];
-         [UIUtility removeActivityIndicatorViewFromView:weakSelf.imageView];
-         
-         CGSize resizedSize =
-         [self resizedSizeForImageSize:image.size];
-         
-         if (image.size.width == resizedSize.width &&
-             image.size.height == resizedSize.height) {
-             weakSelf.imageView.image = image;
-         }else{
-             weakSelf.imageView.image =
-             [weakSelf.imageView.image resizedImageForSize:resizedSize];
+    if (image) {
+        self.imageView.image = image;
+        [self adjustImageViewConstraints:[self.imageView constraints]
+                                  toSize:[self resizedSizeForImageSize:image.size]];
+    }
+    else
+    {
+        [UIUtility setNetworkActivityIndicator:YES];
+        [UIUtility addActivityIndicatorViewOnView:self.imageView
+                                           ofSize:CGSizeZero];
+        
+        NSURL *URL = [NSURL URLWithString:self.itemData.imageUrl];
+        NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+        
+        DetailViewController * __weak weakSelf = self;
+        UIImage* placeHolderImage = [UIImage imageNamed:@"PlaceHolder"];
+        
+        [self.imageView setImageWithURLRequest:request
+                              placeholderImage:placeHolderImage
+                                       success:^(NSURLRequest *request,
+                                                 NSHTTPURLResponse * _Nullable response,
+                                                 UIImage *image)
+         {
+             
+             [UIUtility setNetworkActivityIndicator:NO];
+             [UIUtility removeActivityIndicatorViewFromView:weakSelf.imageView];
+             
+             CGSize resizedSize =
+             [self resizedSizeForImageSize:image.size];
+             
+             if (image.size.width == resizedSize.width &&
+                 image.size.height == resizedSize.height) {
+                 weakSelf.imageView.image = image;
+             }else{
+                 weakSelf.imageView.image =
+                 [weakSelf.imageView.image resizedImageForSize:resizedSize];
+             }
+             
+             [weakSelf adjustImageViewConstraints:[weakSelf.imageView constraints]
+                                           toSize:resizedSize];
+             // Saving in Cache
+             [[NSCache sharedInstance] saveImage:image
+                                          forKey:weakSelf.itemData.imageUrl];
          }
-         
-         [weakSelf adjustImageViewConstraints:[weakSelf.imageView constraints]
-                                       toSize:resizedSize];
-     }
-     failure:^(NSURLRequest *request,
+        failure:^(NSURLRequest *request,
                  NSHTTPURLResponse * _Nullable response,
                  NSError *error){
            
            [UIUtility setNetworkActivityIndicator:NO];
            [UIUtility removeActivityIndicatorViewFromView:weakSelf.imageView];
-     }];
+        }];
+    }
 }
 
 
