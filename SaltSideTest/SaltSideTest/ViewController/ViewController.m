@@ -12,10 +12,16 @@
 #import "AFNetworkReachabilityManager+Extras.h"
 #import "SSURLSessionManager.h"
 
+// Cateogires
+#import "NSArray+JSON.h"
+
 //Utils
 #import "Constants.h"
+#import "ListParser.h"
 
 @interface ViewController ()
+
+@property (strong) NSMutableArray* itemListArray;
 
 @end
 
@@ -38,6 +44,8 @@
 #pragma mark - Data Fetching Methods
 
 - (void)fetchListItems{
+    ViewController * __weak weakSelf = self;
+
     [AFNetworkReachabilityManager isNetworkAvailable:^(bool isAvailable) {
         
         if (isAvailable) {
@@ -50,8 +58,12 @@
                    NSLog(@"Error Retrieving Items");
                }else{
                    NSLog(@"File downloaded to: %@", filePath);
+                   NSArray* litemListArray = [NSArray arrayWithContentsOfJSONFilePath:filePath];
+                   NSLog(@"ItemList: %@", litemListArray);
+                   
+                   weakSelf.itemListArray = [ListParser parseJsonArray:litemListArray];
+                   
                }
-               
             }];
         }
     }];
