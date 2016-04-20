@@ -7,6 +7,7 @@
 //
 
 #import "AFNetworkReachabilityManager+Extras.h"
+#import "UIUtility.h"
 
 @implementation AFNetworkReachabilityManager (Extras)
 
@@ -16,7 +17,8 @@
             status == AFNetworkReachabilityStatusReachableViaWWAN) {
             success(YES);
         }else{
-            NSLog(@"No Network Available");
+            [UIUtility showAlertViewWithTitle:@"No Network Available"
+                                      message:@"Please check your internet connection"];
         }
     }];
     
