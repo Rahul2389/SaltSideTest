@@ -10,6 +10,7 @@
 
 #import "ItemData.h"
 #import "NSDictionary+SSJsonData.h"
+#import "NSString+Manipulate.h"
 
 @implementation ListParser
 
@@ -19,8 +20,8 @@
     
     for (NSDictionary* dict in litemListArray) {
         ItemData* itemData = [[ItemData alloc] init];
-        itemData.title = [dict title];
-        itemData.itemDescription = [dict description];
+        itemData.title = [[dict title] firstLetterCapitalizedString];
+        itemData.itemDescription = [[dict description] firstLetterCapitalizedString];
         itemData.imageUrl = [dict imageURL];
         [itemListArray addObject:itemData];
     }
