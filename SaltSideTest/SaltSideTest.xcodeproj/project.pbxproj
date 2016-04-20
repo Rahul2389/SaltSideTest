@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		924FFEF91CC764D500B0ADE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFEF81CC764D500B0ADE9 /* main.m */; };
 		924FFEFC1CC764D500B0ADE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFEFB1CC764D500B0ADE9 /* AppDelegate.m */; };
-		924FFEFF1CC764D500B0ADE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFEFE1CC764D500B0ADE9 /* ViewController.m */; };
 		924FFF021CC764D500B0ADE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924FFF001CC764D500B0ADE9 /* Main.storyboard */; };
 		924FFF041CC764D500B0ADE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924FFF031CC764D500B0ADE9 /* Assets.xcassets */; };
 		924FFF071CC764D500B0ADE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924FFF051CC764D500B0ADE9 /* LaunchScreen.storyboard */; };
 		924FFF121CC764D500B0ADE9 /* SaltSideTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF111CC764D500B0ADE9 /* SaltSideTestTests.m */; };
 		924FFF1D1CC764D500B0ADE9 /* SaltSideTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF1C1CC764D500B0ADE9 /* SaltSideTestUITests.m */; };
+		924FFF3D1CC789D600B0ADE9 /* SSURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF3C1CC789D600B0ADE9 /* SSURLSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+		924FFF401CC78C0700B0ADE9 /* AFNetworkReachabilityManager+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF3F1CC78C0700B0ADE9 /* AFNetworkReachabilityManager+Extras.m */; settings = {ASSET_TAGS = (); }; };
+		924FFF451CC78DCC00B0ADE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF441CC78DCC00B0ADE9 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FE06147E65252401EF598B35 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAEAD199E7018CC9C03CD96 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +43,6 @@
 		924FFEF81CC764D500B0ADE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		924FFEFA1CC764D500B0ADE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		924FFEFB1CC764D500B0ADE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		924FFEFD1CC764D500B0ADE9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		924FFEFE1CC764D500B0ADE9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		924FFF011CC764D500B0ADE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		924FFF031CC764D500B0ADE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		924FFF061CC764D500B0ADE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +53,13 @@
 		924FFF181CC764D500B0ADE9 /* SaltSideTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaltSideTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		924FFF1C1CC764D500B0ADE9 /* SaltSideTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaltSideTestUITests.m; sourceTree = "<group>"; };
 		924FFF1E1CC764D500B0ADE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		924FFF3B1CC789D600B0ADE9 /* SSURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSURLSessionManager.h; sourceTree = "<group>"; };
+		924FFF3C1CC789D600B0ADE9 /* SSURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSURLSessionManager.m; sourceTree = "<group>"; };
+		924FFF3E1CC78C0700B0ADE9 /* AFNetworkReachabilityManager+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFNetworkReachabilityManager+Extras.h"; sourceTree = "<group>"; };
+		924FFF3F1CC78C0700B0ADE9 /* AFNetworkReachabilityManager+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkReachabilityManager+Extras.m"; sourceTree = "<group>"; };
+		924FFF411CC78D3A00B0ADE9 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		924FFF431CC78DCC00B0ADE9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		924FFF441CC78DCC00B0ADE9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B06251A20689A466CC68C4F5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CEAEAD199E7018CC9C03CD96 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,9 +134,10 @@
 			children = (
 				924FFEFA1CC764D500B0ADE9 /* AppDelegate.h */,
 				924FFEFB1CC764D500B0ADE9 /* AppDelegate.m */,
-				924FFEFD1CC764D500B0ADE9 /* ViewController.h */,
-				924FFEFE1CC764D500B0ADE9 /* ViewController.m */,
 				924FFF001CC764D500B0ADE9 /* Main.storyboard */,
+				924FFF421CC78DCC00B0ADE9 /* ViewController */,
+				924FFF391CC789C700B0ADE9 /* NetworkingExtensions */,
+				924FFF3A1CC789C700B0ADE9 /* Utils */,
 				924FFF031CC764D500B0ADE9 /* Assets.xcassets */,
 				924FFF051CC764D500B0ADE9 /* LaunchScreen.storyboard */,
 				924FFF081CC764D500B0ADE9 /* Info.plist */,
@@ -162,6 +170,34 @@
 				924FFF1E1CC764D500B0ADE9 /* Info.plist */,
 			);
 			path = SaltSideTestUITests;
+			sourceTree = "<group>";
+		};
+		924FFF391CC789C700B0ADE9 /* NetworkingExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				924FFF3B1CC789D600B0ADE9 /* SSURLSessionManager.h */,
+				924FFF3C1CC789D600B0ADE9 /* SSURLSessionManager.m */,
+				924FFF3E1CC78C0700B0ADE9 /* AFNetworkReachabilityManager+Extras.h */,
+				924FFF3F1CC78C0700B0ADE9 /* AFNetworkReachabilityManager+Extras.m */,
+			);
+			path = NetworkingExtensions;
+			sourceTree = "<group>";
+		};
+		924FFF3A1CC789C700B0ADE9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				924FFF411CC78D3A00B0ADE9 /* Constants.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		924FFF421CC78DCC00B0ADE9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				924FFF431CC78DCC00B0ADE9 /* ViewController.h */,
+				924FFF441CC78DCC00B0ADE9 /* ViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,9 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				924FFEFF1CC764D500B0ADE9 /* ViewController.m in Sources */,
+				924FFF3D1CC789D600B0ADE9 /* SSURLSessionManager.m in Sources */,
+				924FFF401CC78C0700B0ADE9 /* AFNetworkReachabilityManager+Extras.m in Sources */,
 				924FFEFC1CC764D500B0ADE9 /* AppDelegate.m in Sources */,
 				924FFEF91CC764D500B0ADE9 /* main.m in Sources */,
+				924FFF451CC78DCC00B0ADE9 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
