@@ -8,7 +8,7 @@
         <!--Item List-->
         <scene sceneID="JMR-TQ-acr">
             <objects>
-                <tableViewController id="s3Z-Zp-PDP" customClass="ListViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ListViewController" id="s3Z-Zp-PDP" customClass="ListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" id="F7z-4m-2tM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

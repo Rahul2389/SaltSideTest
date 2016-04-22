@@ -28,3 +28,5 @@ Things Used:
 
 9. Categories for NSArray, NSDictionary, NSString, UILabel, UIImage
 
+10. Added two Unit tests, one for API Call and Mocked the Json Response for its validation.
+

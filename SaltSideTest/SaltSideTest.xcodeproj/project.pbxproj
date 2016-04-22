@@ -29,6 +29,7 @@
 		924FFF841CC7DE8500B0ADE9 /* UIImage+Manipulate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF831CC7DE8500B0ADE9 /* UIImage+Manipulate.m */; settings = {ASSET_TAGS = (); }; };
 		924FFF861CC7DF3500B0ADE9 /* PlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 924FFF851CC7DF3500B0ADE9 /* PlaceHolder.png */; settings = {ASSET_TAGS = (); }; };
 		924FFF8A1CC7E6B900B0ADE9 /* NSCache+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FFF891CC7E6B900B0ADE9 /* NSCache+Images.m */; settings = {ASSET_TAGS = (); }; };
+		925385521CC9CD1B00F471D7 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 925385511CC9CD1B00F471D7 /* items.json */; settings = {ASSET_TAGS = (); }; };
 		FE06147E65252401EF598B35 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAEAD199E7018CC9C03CD96 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		924FFF851CC7DF3500B0ADE9 /* PlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaceHolder.png; sourceTree = "<group>"; };
 		924FFF881CC7E6B900B0ADE9 /* NSCache+Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCache+Images.h"; sourceTree = "<group>"; };
 		924FFF891CC7E6B900B0ADE9 /* NSCache+Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCache+Images.m"; sourceTree = "<group>"; };
+		925385511CC9CD1B00F471D7 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
 		B06251A20689A466CC68C4F5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CEAEAD199E7018CC9C03CD96 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -181,6 +183,7 @@
 				924FFF851CC7DF3500B0ADE9 /* PlaceHolder.png */,
 				924FFF051CC764D500B0ADE9 /* LaunchScreen.storyboard */,
 				924FFF081CC764D500B0ADE9 /* Info.plist */,
+				925385511CC9CD1B00F471D7 /* items.json */,
 				924FFEF71CC764D500B0ADE9 /* Supporting Files */,
 			);
 			path = SaltSideTest;
@@ -398,6 +401,7 @@
 			files = (
 				924FFF071CC764D500B0ADE9 /* LaunchScreen.storyboard in Resources */,
 				924FFF861CC7DF3500B0ADE9 /* PlaceHolder.png in Resources */,
+				925385521CC9CD1B00F471D7 /* items.json in Resources */,
 				924FFF041CC764D500B0ADE9 /* Assets.xcassets in Resources */,
 				924FFF021CC764D500B0ADE9 /* Main.storyboard in Resources */,
 			);

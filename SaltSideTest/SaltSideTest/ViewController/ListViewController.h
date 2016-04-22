@@ -12,5 +12,7 @@
 
 - (IBAction)refreshButtonAction:(id)sender;
 
+- (void) fetchListItemsCompletionHandler:(void (^)(bool flag))success;
+
 @end
 

@@ -45,7 +45,9 @@
     self.itemListArray = [NSMutableArray array];
     self.tableView.separatorColor = [UIColor clearColor];
     
-    [self fetchListItems];
+    [self fetchListItemsCompletionHandler:^(bool flag){
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,13 +71,15 @@
 
 - (IBAction)refreshButtonAction:(id)sender {
     if(self.itemListArray.count == 0){
-        [self fetchListItems];
+        [self fetchListItemsCompletionHandler:^(bool flag){
+            
+        }];
     }
 }
 
 #pragma mark - Data Fetching Methods
 
-- (void)fetchListItems{
+- (void) fetchListItemsCompletionHandler:(void (^)(bool flag))success{
     ListViewController * __weak weakSelf = self;
     
     [AFNetworkReachabilityManager isNetworkAvailable:^(bool isAvailable) {
@@ -100,6 +104,7 @@
                }else{
                    NSLog(@"File downloaded to: %@", filePath);
 
+                   success(true);
                    NSArray* litemListArray =
                    [NSArray arrayWithContentsOfJSONFilePath:filePath];
                    
